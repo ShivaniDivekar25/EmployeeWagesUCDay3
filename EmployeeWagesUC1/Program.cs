@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 0 for Welcome message program\nEnter 1 for UC1\nEnter 2 for UC2\nEnter 3 for UC3");
+            Console.WriteLine("Enter 0 for Welcome message program\nEnter 1 for UC1\nEnter 2 for UC2\nEnter 3 for UC3\nEnter 4 for UC4");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -25,6 +25,11 @@
                     Random random2 = new Random();
                     int empCheck2 = random2.Next(0, 3);
                     EmployeeWagesUC3.EmployeeUC3(empCheck2);
+                    break;
+                case 4:
+                    Random random3 = new Random();
+                    int empCheck3 = random3.Next(0, 3);
+                    EmployeeWagesUC4.EmployeeUC4(empCheck3);
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
